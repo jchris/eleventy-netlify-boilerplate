@@ -11,7 +11,7 @@ tags:
   - cloudless
 ---
 
-Generative and interactive AI is maturing rapidly, and the infrastructure it depends on was built to support the previous era of software. Provenance tracking, repeatability, and provability are becoming crucial for understanding program flows in new applications that chain multiple AI calls to get results. By using cryptographic content identifiers (CIDs) to refer to AI models, parameters, prompt inputs, and generated outputs, developers can more easily and reliably tune, improve, and debug AI workloads. Proofs play a crucial role in addressing these concerns, as they provide a method for verifying the accuracy of data and enabling efficient AI workflows. Keep reading to learn about the real-world implementations, benefits, and applications of proofs in AI.
+Generative and interactive AI is maturing rapidly, and the infrastructure it depends on was built to support the previous era of software. Provenance tracking, repeatability, and provability are becoming crucial for understanding program flows in new applications that chain multiple AI calls to get results. By using proofs and content identifiers (CIDs) developers can more easily and reliably tune, improve, and debug AI workflows. Proofs play a crucial role in addressing these concerns, as they provide a method for verifying the accuracy of data and enabling efficient AI chains. Keep reading to learn about the real-world implementations, benefits, and applications of proofs in AI.
 
 ### What is a proof, technically?
 
@@ -31,11 +31,7 @@ The same concept of caching and integrity checking applies to data requests acro
 
 Proofs play a critical role in these network requests as well. When a secure connection is established between your computer and a website, a handshake process verifies the website's identity before creating a secret communication channel. The secure connection is the easy part, but how do you decide if it's really them?
 
-To determine if the website is genuine, a process known as certificate verification is used. The website provides a digital certificate issued by a trusted organization called a Certificate Authority (CA). This digital certificate contains information about the website, such as its domain name, and a public key for encryption. The certificate is also digitally signed by the CA, which serves as a proof of its authenticity.
-
-Your computer checks the certificate's digital signature using the CA's public key, which is stored in your browser or operating system. If the signature is valid, your computer then verifies that the certificate is issued to the website you're trying to visit. Once these checks are completed successfully, your computer trusts the website's identity and proceeds with the secure connection.
-
-This certificate verification process relies on a chain of trust, with proofs and digital signatures at each step, ensuring that you're connecting to the authentic website and not an imposter. This is just another example of how proofs are an essential part of our everyday digital interactions.
+To determine if the website is genuine, a process known as certificate verification is used. The website provides a digital certificate issued by a trusted organization called a Certificate Authority (CA). This digital certificate contains information about the website, such as its domain name, and a public key for encryption. The certificate is also digitally signed by the CA, which serves as a proof of its authenticity. Your computer checks the certificate's digital signature using the CA's public key, which is stored in your browser or operating system. If the signature is valid, your computer then verifies that the certificate is issued to the website you're trying to visit. Once these checks are completed successfully, your computer trusts the website's identity and proceeds with the secure connection. This certificate verification process relies on a chain of trust, with proofs and digital signatures at each step, ensuring that you're connecting to the authentic website and not an imposter. This is just another example of how proofs are an essential part of our everyday digital interactions.
 
 ### How proofs help for AI
 
