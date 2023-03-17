@@ -3,9 +3,12 @@ layout: layouts/base.njk
 section: post
 ---
 
-<article>
-  <h1>{{ title }}</h1>
-  <p>
+{% include "components/npm.njk" %}
+
+
+<article class="post text-gray-200 feature-grid pt-10 px-4 sm:px-12 lg:px-32 text-xl">
+  <h1 class="text-4xl font-bold my-12 text-center">{{ title }}</h1>
+  <p class="byline">
     <small>
       <time datetime="{{ page.date | machineDate }}">{{ page.date | readableDate }}</time> by <a href="/authors/{{ author | slug }}/">{{ author }}</a>
     </small>
@@ -14,7 +17,7 @@ section: post
   {{ layoutContent | safe }}
 
   {% if tags %}
-    <p>
+    <p class="tags">Tagged: 
     {% for tag in tags %}
       {%- if tag != "post" -%}
         {% set tagUrl %}/tags/{{ tag }}/{% endset %}
@@ -26,6 +29,8 @@ section: post
 
 </article>
 
-<nav>
-  <a href="{{ '/blog/' | url }}">← Blog index</a>
+<nav class="px-12 pt-4 pb-10">
+  <a href="{{ '/blog/' | url }}">← more posts</a>
 </nav>
+
+{% include "components/cta.njk" %}
