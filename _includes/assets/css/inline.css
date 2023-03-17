@@ -106,7 +106,7 @@ html .feature-grid .code-sample code {
 
 @keyframes beat {
   0% {
-    background-image: url('./copied-small.png');
+    background-image: url('/static/img/copied-small.png');
     background-size: 5%;
     /* background-origin: top right; */
   }
