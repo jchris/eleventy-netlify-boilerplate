@@ -4,22 +4,21 @@ metaDescription: This is a sample meta description. If one is not present in you
 date: 2017-01-01T00:00:00.000Z
 permalink: /pricing/index.html
 eleventyNavigation:
-  key: About
+  key: Pricing
   order: 1
 ---
-
-
-
 ### Fireproof Access
 
-If you've been enjoying building apps with Fireproof, it's time to elevate your experience by becoming a Fireproof Access member for just $2/month. Members have access to the developer dashboard (coming soon), metered services like query and notify, and of course, the Fireproof Access chat server, where you can connect with fellow Fireproof users and developers, as well as seek assistance from the core team. Upgrade to Fireproof Access today and unlock the full potential of our platform.
+Elevate your experience by becoming a Fireproof Access member for just $2/month. Members have access to the developer dashboard (coming soon), metered services like query and notify, and of course, the Fireproof Access chat server, where you can connect with fellow Fireproof users and developers, as well as seek assistance from the core team. Upgrade to Fireproof Access today and unlock the full potential of our platform.
+
+[**Early Access – $2 / month**](https://buy.stripe.com/test_14k2b7bTL3132oU6op)
 
 ### What am I getting?
 
 Fireproof Access includes:
 
 * Early access to cutting-edge developer tools and beta branches
-* Developer dashboard for monitoring Fireproof databases and tracking query history
+* Developer dashboard for monitoring Fireproof databases and tracking query history (coming soon)
 * Direct connection with core team and community through the Fireproof Access chat server
 
 ### Free (as in speech)

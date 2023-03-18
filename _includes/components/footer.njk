@@ -20,10 +20,11 @@
             <a href="#">Stack Overflow</a>
           </li> -->
                 {%- for entry in navPages %}
-        <li class="mr-8">
+        <li class="mr-6">
           <a href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>
         </li>
       {%- endfor %}
+
     </ul>
 
 <!-- Menu -->

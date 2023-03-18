@@ -2,8 +2,10 @@
 layout: layouts/base.njk
 section: contact
 ---
-<h1>{{ title }}</h1>
+<article class="post text-gray-200 feature-grid pt-10 px-4 sm:px-12 lg:px-32 text-xl">
+  <h1 class="text-4xl font-bold my-12 text-center">{{ title }}</h1>
 
 {{ layoutContent | safe }}
 
-{% include "components/form.njk" %}
+{# {% include "components/form.njk" %} #}
+</article>
