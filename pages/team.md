@@ -22,7 +22,7 @@ Chris seizes opportunities at the right moment, and thrives on building successf
 
 ### Mikeal Rogers
 
-Mikeal Rogers is an seasoned developer, community builder, and open-source developer with a deep understanding of web technology. With his expertise in JavaScript, databases, and web technology, Mikeal brings a wealth of knowledge and experience to Fireproof. He is the creator of NodeConf, a leading conference for Node.js developers, and the author of many widely used JavaScript libraries. His recent research includes hash-consistent b-trees and IPLD transaction formats.
+Mikeal Rogers is a seasoned developer, community builder, and open-source developer with a deep understanding of web technology. With his expertise in JavaScript, databases, and web technology, Mikeal brings a wealth of knowledge and experience to Fireproof. He is the creator of NodeConf, a leading conference for Node.js developers, and the author of many widely used JavaScript libraries. His recent research includes hash-consistent b-trees and IPLD transaction formats.
 
 ### Nuno Job
 
