@@ -1,7 +1,7 @@
 <section>
 	{% for doc in docslist %}
 		<article{% if doc.url == url %} data-current="current item"{% endif %}>
-			<h3>Doc
+			<h3>
 				<a href="{{ doc.url | url }}">
 					{% if doc.data.title %}
 						{{ doc.data.title }}

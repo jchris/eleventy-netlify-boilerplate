@@ -1,4 +1,7 @@
 {
   "layout": "layouts/documentation.njk",
-  "permalink": "documentation/{{ title | slug }}/index.html"
+  "permalink": "documentation/{{ title | slug }}/index.html",
+  "tags": [
+    "documentation"
+  ]
 }
