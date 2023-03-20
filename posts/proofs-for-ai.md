@@ -1,16 +1,18 @@
 ---
 title: Why proofs matter for AI
-metaDescription: Merkle hash tree indexing, optimizing workflows, ensuring data integrity, and empowering AI-powered experiences in industries such as healthcare, security, and accessibility.
+metaDescription: Merkle hash tree indexing, optimizing workflows, ensuring data
+  integrity, and empowering AI-powered experiences in industries such as
+  healthcare, security, and accessibility.
 date: 2023-03-17T18:13:08.530Z
 author: J Chris Anderson
-summary: Boosting reproducibility, accelerating data processing, enhancing security, and enabling efficient collaboration
+summary: Boosting reproducibility, accelerating data processing, enhancing
+  security, and enabling efficient collaboration
 tags:
   - proofs
   - AI
   - architecture
   - cloudless
 ---
-
 Generative and interactive AI is maturing rapidly, but the infrastructure it depends on was built to support the previous era of software. Provenance tracking, repeatability, and provability are becoming crucial for understanding program flows in new applications that chain multiple AI calls to get results. By using proofs and content identifiers ([CIDs](https://cid.ipfs.tech)) developers can more easily and reliably tune, improve, and debug AI workflows. Proofs play a crucial role in addressing these concerns, as they provide a method for verifying the accuracy of data and enabling efficient AI chains. Keep reading to learn about the real-world implementations, benefits, and applications of proofs in AI.
 
 ### What is a proof, technically?
@@ -18,6 +20,8 @@ Generative and interactive AI is maturing rapidly, but the infrastructure it dep
 Cryptographic content identifiers (CIDs) enable developers to reference AI models, parameters, prompt inputs, and generated outputs with confidence in their provenance. CIDs are simply the hash of the data they represent. This means any data you can think of, from a movie file to a business card, already has a CID which anyone can find with math functions so common that they are built into computer chips. No matter how big or complex a piece of data the CID is the same size, and it's self-verifying. That means if someone gives you a CID, you can "[ask the internet](https://medium.com/@sjarancio/ipfs-what-it-is-how-it-works-and-why-its-needed-49b75d8e857b)" and if anyone has the content which matches it, you can get a copy from them and you don't have to trust them, to trust you got what you were asking for. Neat, huh? This basic technique powers a lot of software, from databases to image hosting sites to web accelerators.
 
 If you need to quickly and securely check if a small piece of data is part of a larger set, [consistent hash (Merkle) trees](https://en.wikipedia.org/wiki/Merkle_tree) offer an efficient solution. Merkle hash trees make it easy to check if a small piece of data is part of a bigger set, and they do this quickly and securely. Imagine a tree where each leaf is a small chunk of data. You can create a unique fingerprint, or hash, for each chunk. Then, combine pairs of fingerprints and create a new hash for each pair. Keep doing this until you reach the root, creating a single hash that represents the whole tree. This root hash is like a summary of all the data in the tree. Anyone who has the root hash can validate if their copy of the entire tree is untampered with -- any changes and the root hash won't match.
+
+![A Merkle consistent hash tree](/static/img/screen-shot-2023-03-20-at-3.52.32-pm.png "Merkle tree figure from Wikipedia")
 
 Now, let's say you want to check if a small piece of data is part of this big set. You don't need the whole tree—just the fingerprints you used to create the top hash. With only a few of these, you can recreate the top hash and confirm that the data is part of the set. This is super useful in AI because it speeds up tasks like analyzing data and making decisions. Plus, it's perfect for areas where you need quick, accurate results, like healthcare and cybersecurity. Merkle hash trees help make AI solutions more reliable, secure, and efficient, allowing AI workloads to be used in situations where trust and accountability are paramount.
 
@@ -31,7 +35,7 @@ When a piece of data is requested by a program, it goes through multiple layers 
 
 The same concept of caching and integrity checking applies to data requests across a network. Starting at the fast, local cache in a user's browser, the system verifies the data's integrity before moving on to the next layer. If the data is not found in the local cache, the request continues to the network cache layers, such as HTTP caches, Memcached, or server filesystem caches. At each stage, integrity checks are performed to ensure that the data is accurate and has not been tampered with. This layered approach to caching and integrity checks allows for quick, efficient, and reliable data retrieval in both single-machine and networked environments.
 
-~[Proofs are integral for compute acceleration]() [Figure is from a great article on computer memory speeds.](https://www.microcontrollertips.com/the-complexities-of-cache/)
+![Proofs are integral for compute acceleration.](/static/img/computermemoryhierarchy.png " Figure is from a great article on computer memory speeds.")
 
 Proofs play a critical role in these network requests as well. When a secure connection is established between your computer and a website, a handshake process verifies the website's identity before creating a secret communication channel. The secure connection is the easy part, but how do you decide if it's really them?
 
