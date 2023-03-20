@@ -7,7 +7,7 @@ date: 2023-03-17
 permalink: /team/index.html
 eleventyNavigation:
   key: Team
-  order: 3
+  order: 2
 ---
 ### J Chris Anderson
 Founder

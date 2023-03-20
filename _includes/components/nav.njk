@@ -5,9 +5,6 @@
 <nav class="nav-menu">
   {% set navPages = collections.all | eleventyNavigation %}
   <ul class="flex">
-    <li class="mr-8">
-      <a href="/docs/">JSDoc</a>
-    </li>
     {%- for entry in navPages %}
       <li class="mr-6">
         <a href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>

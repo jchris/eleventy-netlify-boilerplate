@@ -1,11 +1,12 @@
 ---
 layout: layouts/developer.njk
-title: Developer
+title: Developer Documentation
 metaDescription: The documentation index
-date: 2017-01-01
+date: 2023-01-01
 permalink: /developer/index.html
 eleventyNavigation:
   key: Docs
-  order: 2
+  order: 0
 ---
-Hello
+
+These articles are designed to help you write awesome apps with Fireproof. If you want to look at reference documentation generated from the source code, the <a href="/docs/">Fireproof JSDocs</a> are here.
